@@ -1,0 +1,91 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.0-rc1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 06, 2017 at 04:52 AM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 7.0.13
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `myweb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mahasiswa`
+--
+
+CREATE TABLE `mahasiswa` (
+  `nim` varchar(12) NOT NULL,
+  `nama` varchar(40) NOT NULL,
+  `ttl` varchar(100) NOT NULL,
+  `alamat` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `mahasiswa`
+--
+
+INSERT INTO `mahasiswa` (`nim`, `nama`, `ttl`, `alamat`) VALUES
+('160535611858', 'M FADEL SETYAWAN', '06/04/1998', 'Sawojajar'),
+('160535611821', 'M. FANDI ARFABUMA', '26/06/1998', 'Malang'),
+('160535611867', 'M.ANAS PANDU WIJAYANTO', '06/06/1997', 'Kediri'),
+('160535611864', 'MARWA KHAIRUNNISA', '21/08/1998', 'Malang'),
+('160535611850', 'MEYNABEL DIMAS WISODEWO', '16/05/1998', 'Trenggalek'),
+('160535611837', 'MOHAMMAD SYUKRON MARZUQI', '28/11/1996', 'Jombang'),
+('160535611817', 'MOKHAMAD IQBAL', '07/07/1998', 'Pasuruan'),
+('160535611829', 'MUHAMAD DWI ARIFIANTO', '29/06/1997', 'Wonogiri'),
+('160535611853', 'MUHAMMAD BAHAUDDIN ALFAN', '21/12/1997', 'Kepanjen'),
+('160535611841', 'MUHAMMAD DHANIAR RIEFQY ZAIN', '09/09/1995', 'Probolinggo'),
+('160535611840', 'MUHAMMAD ILHAM', '29/07/1997', 'Blitar'),
+('160535611857', 'MUHAMMAD RIZAL RUSDIANSYAH', '22/05/1998', 'Gresik'),
+('160535611818', 'MUKHAMMAD RIZQI IRFANDIANSYAH', '23/08/1998', 'Bumiayu'),
+('160535611823', 'NIENDHITTA TAMIA LASSELA', '08/09/1998', 'Malang'),
+('160535611843', 'NUR CHOLIS MAJID', '16/05/1998', 'Sumenep'),
+('160535611844', 'OEMAR SYARIF BURHAN', '11/08/1998', 'Dieng'),
+('160535611836', 'OKY EKA NOORRAFIF', '04/10/1997', 'Malang'),
+('160535611868', 'PRADIPA ABABIEL', '08/03/1998', 'Banyuwangi'),
+('160535611865', 'QORINA MAILIL HUSNA MUMTAZA', '02/09/1999', 'Blitar'),
+('160535611819', 'SABRI SANGJAYA', '06/07/1998', 'Serayu'),
+('160535611801', 'SHADA INTISHAR NABILLAH', '31/01/1999', 'Karangploso'),
+('160535611809', 'SHOLIKHATUL AMALIYA', '03/03/1998', 'Bululawang'),
+('160535611808', 'SITI FATIMAH PUSPITANINGRUM', '11/04/1998', 'Lesti'),
+('160535611806', 'SITI NUR KHOFIFAH', '28/10/1999', 'Lamongan'),
+('160535611826', 'SLAMETIAN DEWA TEGAR PERKASA', '07/08/1998', 'Lumajang'),
+('160535611859', 'TRI KURNIA FAJARWATI', '03/11/1997', 'Magetan'),
+('160535611849', 'WAHYU ARBIANDA YUDHA PRATAMA', '06/12/1998', 'Pasuruan'),
+('160535611861', 'WAHYU EKA PRADITIA', '26/06/1998', 'Mojokerto'),
+('160535611847', 'YOGA MARTAFIAN', '09/03/1998', 'Balikpapan'),
+('160535611839', 'YUDHA KUSUMA PUTRA', '05/07/1997', 'Batu'),
+('160535611807', 'YUVETA ROSABELLA', '23/07/1998', 'Lamongan'),
+('160535611888', 'Susi Similikiti', '06/07/1998', 'serayu'),
+('160535611887', 'Ghofur', '12/25/2017', 'Gor Kenarok'),
+('160535611880', 'Abdul', '06/07/1998', 'Buring');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `mahasiswa`
+--
+ALTER TABLE `mahasiswa`
+  ADD PRIMARY KEY (`nim`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
